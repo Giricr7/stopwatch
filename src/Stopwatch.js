@@ -87,7 +87,7 @@ function Stopwatch() {
         localStorage.setItem('lastLog', `${hours}:${minutes}:${seconds}`);
         if(+(localStorage.getItem('lastLog').split(':')[2])>0)
            { setTimerOn(true)}
-        
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [seconds])
     
     //action to be performed when there is a state change in the variable 'minute'
