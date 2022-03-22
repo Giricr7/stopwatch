@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+.App{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#clock_div{
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#clock_div>span{
+  font-family: monospace;
+  font-size: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#lap_div{
+height: 350px;
+background-color: #f3fcfd;
+width: 80%;
+overflow-x: scroll;
+overflow-y: hidden;
+}
+
+#button_div{
+  height: 10vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+#content_div{
+  width: 80%;
+  background-color: #f3fcfd;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 80vh;
+  border-radius: 50px;
+  padding: 2%;
 }
 
-.App-link {
-  color: #61dafb;
+.laps_innerdiv{
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.laps{
+  background-color:white ;
+  text-align: center;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+#lap_heading{
+  font-size: small;
+  font-family: Bahnschrift;
+}
+
+#lap_value{
+  font-family: Arial Black;
+}
+
+#lap_icon{
+  font-size: x-large;
+  position: fixed;
+}
+
+#delete_icon{
+color: rgb(252, 135, 135);
+}
+
+#delete_icon:hover{
+  cursor: pointer;
+}
+
+.buttons{
+  border: none;
+  padding: 1%;
+  width: 15%;
+  border-radius: 20px;
+  background-color: #cff4f8;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.buttons:hover{
+  cursor: pointer;
+}
+
+sub{
+  font-size: 20px;
 }
